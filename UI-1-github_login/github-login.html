@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <style>
-      body {
+      form {
         width: 250px;
         font-family: 'Trebuchet MS';
         font-size: 11px;
         color: grey;
+        margin: auto;
+        align-self: center;
+        padding: 10px;
+        border: solid 1px;
+        border-radius: 5px;
       }
 
       a {
@@ -20,43 +25,59 @@
 
       p {
         width: 260px;
+        color: grey;
       }
-
+      
+      #p1{
+        text-align: center;
+      }
       button {
         color: white;
         background-color: rgb(23, 168, 62);
         height: 60px;
         width: 250px;
         border-radius: 5px;
+        
+      }
+
+      label {
+        font-weight: 500;
       }
 
       .textbox {
         border-radius: 5px;
         width: 250px;
         height: 30px;
+        color: gray;
+        border:solid;
+        border-width: 1px;
+        border-color: lightgray;
+        margin-top: 5px;
       }
     </style>
   </head>
   <body>
-    <span>Username</span> <br />
-    <input type="text" class="textbox" placeholder="Pick a username" />
-    <br /><br />
-    <span>Email</span> <br />
-    <input type="text" class="textbox" placeholder="you@example.com" />
-    <br /><br />
-    <span>Password</span> <br />
-    <input type="text" class="textbox" placeholder="Create a password" /> <br />
-    <p id="p1">
-      Make sure it's more than 15 characters, or at least 8 characters,
-      including a number, and a lowercase letter.
-    </p>
+    <form>
+      <label>Username</label> <br />
+      <input type="text" class="textbox" placeholder="  Pick a username" />
+      <br /><br />
+      <label>Email</label> <br />
+      <input type="text" class="textbox" placeholder="  you@example.com" />
+      <br /><br />
+      <label>Password</label> <br />
+      <input type="password" class="textbox" placeholder="  Create a password" /> <br />
+      <p>
+        Make sure it's more than 15 characters, or at least 8 characters,
+        including a number, and a lowercase letter.
+      </p>
 
-    <button><strong>Sign up for GitHub</strong></button> <br />
-    <p id="p2">
-      By clicking "Sign up for GitHub", you agree to our
-      <a href="https://www.github.com">terms of service</a> and
-      <a href="https://www.github.com">privacy statement</a>. We'll occasionally
-      send you account related emails.
-    </p>
+      <button><strong>Sign up for GitHub</strong></button> <br />
+      <p id="p1">
+        By clicking "Sign up for GitHub", you agree to our
+        <a href="https://www.github.com">terms of service</a> and
+        <a href="https://www.github.com">privacy statement</a>. We'll occasionally
+        send you account related emails.
+      </p>
+    </form>
   </body>
 </html>
